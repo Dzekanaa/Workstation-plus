@@ -1,11 +1,18 @@
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('fonts/ClashDisplay-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
+  font-family: 'ClashDisplay'/*, sans-serif*/;
 }
 
 body {
   margin: 0;
   padding: 0;
-  font: 16px Arial;
   width: 100vw !important;
   height: 100vh !important;
   overflow: hidden;
@@ -38,32 +45,62 @@ body {
 .weatherArea,
 .logo-section,
 .clock-section {
-  width: 16vw;
+  /*width: 16vw;*/
 }
 
 /* top bar style  */
+
 .topBar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    height: 33vh;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 50px;
+}
+
+.midBar {
+  display: block;
+  vertical-align: central;
+  justify-items: center;
   width: 100%;
   height: 33vh;
   padding: 50px 60px;
 }
 
+.midBar {
+    display: block;
+
+    justify-items: center;
+    align-items: center;
+
+    justify-content: center;
+    align-content: center;
+
+    text-align: center;
+
+    vertical-align: central;
+
+    width: 45%;
+    min-width: 450px;
+    height: auto;
+    /*padding: 50px 60px;*/
+}
+
 .logo-section img {
-  width: 127px;
+    width: 127px;
 }
 
 
 /* search input style  */
 .searchInput-section {
-  position: relative;
+    position: relative;
+    margin: 50px 0 0 0;
 }
 
 .search-section {
-  width: 60vw;
-  opacity: 0;
+    /*width: 60vw;*/
+    opacity: 0;
+    padding: 10px 0px 0px 0px;
 }
 .search-section form {
   width: 73%;
@@ -72,17 +109,19 @@ body {
 .search-section input {
   background-color: #7c7c7c8a;
   width: 100%;
+  height: 55px;
   outline: none;
   border: 1.5px solid #cbcbcb;
-  border-radius: 25px;
+  border-radius: 30px;
   transition: all 0.2s ease;
   padding: 10px 15px;
   color: #fff;
-  font-size: 24px;
+  font-size: 16pt;
 }
 
 .search-section input::placeholder {
   color: #ccc;
+  font-size: 16pt;
 }
 
 .search-section input:hover {
@@ -96,8 +135,8 @@ body {
   width: 60px;
   height: 29px;
   position: absolute;
-  right: 8px;
-  top: 11px;
+  right: 10px;
+  top: 12px;
   cursor: pointer;
   background: #ccc;
   display: flex;
@@ -169,9 +208,10 @@ body {
 }
 
 .time {
-  font-size: 44px;
-  font-weight: bold;
+    font-size: 60pt;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
 }
+
 
 /* quote-section */
 .quote-section {
@@ -199,9 +239,11 @@ body {
 
 /* menu style  */
 .menu {
-  position: absolute;
-  bottom: 10px;
-  color: #fff;
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    margin: 0 0 40px 0;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
 }
 
 .menu a {
@@ -525,8 +567,153 @@ ul.itemAction li:hover {
   border-radius: 3px;
   backdrop-filter: blur(7px);
 }
+
+.customizeButton {
+    width: auto;
+    height: auto;
+    border: solid;
+    border-color: #fff;
+    border-width: 2px;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 15px 25px 15px 25px;
+    color: #fff;
+    font-size: 16pt;
+    border-radius: 100px;
+    text-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
+
+    transition: opacity 0.25s;
+}
+
+.customizeButton:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.customizeButton:active {
+    opacity: 1;
+}
+
+.customizeButtonImg {
+    width: 18px;
+    margin: 0 5px 0 0;
+}
+
+.customizeSideBar {
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%);
+    right: 0;
+    width: 20vw;
+    min-width: 320px;
+    background-color: #fff;
+    height: 100%;
+    z-index: 1000;
+    opacity: 1;
+    padding: 40px 35px;
+}
+
+.customizeLogo {
+    font-size: 20pt;
+    text-align: center;
+
+    justify-content: space-between;
+    display: flex;
+
+    text-shadow: none;
+    box-shadow: none;
+}
+
+.customizeButtonExit {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+
+    background-color: transparent;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+
+    text-align: center;
+    padding: 0;
+    font-size: 10px;
+    font-weight: bolder;
+}
+
+.customizeBackgroundTitle {
+    font-size: 14pt;
+    text-shadow: none;
+    margin-bottom: 50px;
+}
+
+.customizeBgS1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11pt;
+    text-shadow: none;
+    margin-bottom: 30px;
+}
+
+.customizeBgButton {
+    height: auto;
+    width: auto;
+    padding: 15px 15px;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    display: flex;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+.customizeBgBttImg {
+    width: 15px;
+    padding: 0;
+    margin-left: 10px;
+    vertical-align: central;
+    opacity: 0.5;
+}
+
+.uploadBackground {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.uploadBgButton {
+    height: 100%;
+    width: 100%;
+    font-size: 12pt;
+    border: none;
+    border-radius: 30px;
+    background-color: #f4f4f4;
+    color: #5864ac;
+    cursor: pointer;
+}
+
+.customizeBgSlider1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11pt;
+    text-shadow: none;
+}
+
+.backgroundSlider1 {
+    box-shadow: none;
+}
+
+.customizeLine1 {
+    margin: 30px 0 30px 0;
+}
+
+.date {
+    font-size: 18pt;
+    margin: 20px 0 0 0;
+    text-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+}
+
 td.date {
-  width: 100px;
+  width: 100vw;
   text-align: start;
 }
 td.icon {
@@ -597,15 +784,8 @@ span.realoadBtn {
 span.realoadBtn img {
   max-width: 100%;
 }
-@font-face {
-  font-family: "Material Icons";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url(0c35d18bf06992036b69.woff2) format("woff2"), url(4d73cb90e394b34b7670.woff) format("woff");
-}
+
 .material-icons {
-  font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -622,15 +802,7 @@ span.realoadBtn img {
   font-feature-settings: "liga";
 }
 
-@font-face {
-  font-family: "Material Icons Outlined";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url(6f420cf17cc0d7676fad.woff2) format("woff2"), url(f882956fd323fd322f31.woff) format("woff");
-}
 .material-icons-outlined {
-  font-family: "Material Icons Outlined";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -647,15 +819,7 @@ span.realoadBtn img {
   font-feature-settings: "liga";
 }
 
-@font-face {
-  font-family: "Material Icons Round";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url(c380809fd3677d7d6903.woff2) format("woff2"), url(5d681e2edae8c60630db.woff) format("woff");
-}
 .material-icons-round {
-  font-family: "Material Icons Round";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -672,15 +836,7 @@ span.realoadBtn img {
   font-feature-settings: "liga";
 }
 
-@font-face {
-  font-family: "Material Icons Sharp";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url(219aa9140e099e6c72ed.woff2) format("woff2"), url(3a4004a46a653d4b2166.woff) format("woff");
-}
 .material-icons-sharp {
-  font-family: "Material Icons Sharp";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -697,15 +853,7 @@ span.realoadBtn img {
   font-feature-settings: "liga";
 }
 
-@font-face {
-  font-family: "Material Icons Two Tone";
-  font-style: normal;
-  font-weight: 400;
-  font-display: block;
-  src: url(4ef4218c522f1eb6b5b1.woff2) format("woff2"), url(3baa5b8f3469222b822d.woff) format("woff");
-}
 .material-icons-two-tone {
-  font-family: "Material Icons Two Tone";
   font-weight: normal;
   font-style: normal;
   font-size: 24px;
@@ -1030,10 +1178,10 @@ ul.recentlyClosed__area li a {
 .sideBarLink__area{
     position: absolute;
     top: 50%;
-    left: 0px;
+    right: 50px;
     transform: translate(0px, -50%);
     background: #fff;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px 5px 5px 5px;
     box-shadow: 0px 0px 4px #0000007a;
     z-index: 999;
     text-shadow: none;
