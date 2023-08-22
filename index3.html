@@ -1,0 +1,345 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"><
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions</title>
+        <html style="scroll-behavior: smooth;">
+
+        <!-- ovo je za tailwind -->
+        <link href="dist/output3.css" rel="stylesheet" />
+</head>
+
+<body>
+    <nav class="bg-white border-b-gray-200 dark:bg-custom-black border-b-[0.5px] dark:border-b-gray-700">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <a href="index.html" class="flex items-center">
+                <img src="Resources/logo.svg" class="h-8 mr-3" alt="Workstation+ Logo" />
+            </a>
+            <div class="flex md:order-2">
+                <button type="button"
+                    class="text-white bg-custom-purple hover:bg-slate-600 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-custom-purple dark:hover:bg-slate-600 dark:focus:ring-slate-700">Get
+                    Workstation+</button>
+                <button data-collapse-toggle="navbar-cta" type="button"
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                    aria-controls="navbar-cta" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 17 14">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M1 1h15M1 7h15M1 13h15" />
+                    </svg>
+                </button>
+            </div>
+            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                <ul
+                    class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-custom-black md:dark:bg-custom-black dark:border-gray-700">
+                    <li>
+                        <a href="index.html"
+                            class="block py-2 pl-3 pr-4 text-stone-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-custom-purple md:p-0 md:dark:hover:text-custom-purple dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html#about"
+                            class="block py-2 pl-3 pr-4 text-stone-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-custom-purple md:p-0 md:dark:hover:text-custom-purple dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact"
+                            class="block py-2 pl-3 pr-4 text-stone-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-custom-purple md:p-0 md:dark:hover:text-custom-purple dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                    <li>
+                        <a href="index2.html"
+                            class="block py-2 pl-3 pr-4 text-stone-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-custom-purple md:p-0 md:dark:hover:text-custom-purple dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Privacy
+                            Policy</a>
+                    </li>
+                    <li>
+                        <a href="index3.html"
+                            class="block py-2 pl-3 pr-4 text-gray-300 bg-slate-500 rounded md:bg-transparent md:text-custom-purple md:p-0 md:dark:text-custom-purple"
+                            aria-current="page">Term
+                            & Condition</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="flex justify-center dark:bg-custom-black">
+        <div class="md:mt-14 md:ml-32 ml-0 mt-0 h-100dvh flex items-start justify-start">
+            <!-- Sticky child div using Tailwind CSS -->
+            <div id="FixedDiv" class=" sticky top-0">
+                <div class="relative w-full">
+                    <div id="indicator" class="w-1.5 h-12 rounded-lg bg-slate-500 absolute"></div>
+                    <ul class=" ml-8">
+                        <li id="first"
+                            class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+                            onclick="selectItem(this)">
+                            <a href="#introduction">Introduction</a>
+                        </li>
+                        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+                            onclick="selectItem(this)">
+                            <a href="#ownership">Ownership</a>
+                        </li>
+                        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+                            onclick="selectItem(this)">
+                            <a href="#responsibility">Responsibility of Extension Visitors</a>
+                        </li>
+                        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+                            onclick="selectItem(this)">
+                            <a href="#copyright">Copyright Infringement and DMCA Policy</a>
+                        </li>
+                        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+                            onclick="selectItem(this)">
+                            <a href="#intellectual">Intellectual Property</a>
+                        </li>
+                        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+                            onclick="selectItem(this)">
+                            <a href="#changes">Changes</a>
+                        </li>
+                        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+                            onclick="selectItem(this)">
+                            <a href="#contacts">Contacts</a>
+                        </li>
+                        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+                            onclick="selectItem(this)">
+                            <a href="#termination">Termination</a>
+                        </li>
+                        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+                            onclick="selectItem(this)">
+                            <a href="#limitation">Limitation of Liability</a>
+                        </li>
+                        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+                            onclick="selectItem(this)">
+                            <a href="#general">General Representation and Warranty</a>
+                        </li>
+                        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+                            onclick="selectItem(this)">
+                            <a href="#indemnification">Indemnification</a>
+                        </li>
+                        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+                            onclick="selectItem(this)">
+                            <a href="#site">Site Terms of Use Modifications</a>
+                        </li>
+                        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+                            onclick="selectItem(this)">
+                            <a href="#AGA">AGA Consulting Services LLC</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w-[70%] flex-col justify-start items-start gap-[74px] inline-flex p-16">
+            <div class="justify-center items-center gap-4 inline-flex">
+                <img class="w-10" src="Resources/Privacy Police.svg" />
+                <div class="text-center text-stone-800 text-5xl font-medium dark:text-gray-300">Terms & Conditions</div>
+            </div>
+            <div class="flex-col justify-center items-start gap-[50px] flex">
+                <div id="introduction" class=" flex-col justify-center items-start gap-[13px] flex">
+                    <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Introduction</div>
+                    <div class="self-stretch text-stone-800 text-md font-normal dark:text-gray-400">The following terms and conditions govern all use of Workstation+ and all content, services and products available at or through the extension. The extension is offered subject to your acceptance without modification of all of the terms and conditions contained herein and all other operating rules, policies (including, without limitation, Workstation+ Privacy Policy).Please read this Agreement carefully before accessing or using Workstation+. By accessing or using any part of Workstation+, you agree to be bound by the terms and conditions of this agreement. If you do not agree to all the terms and conditions of this agreement, then you may not access Workstation+ or use any services. If these terms and conditions are considered an offer by Workstation+. Acceptance is expressly limited to these terms.</div>
+                </div>
+                <div id="ownership" class=" flex-col justify-center items-start gap-[13px] flex">
+                    <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Ownership</div>
+                    <div class="self-stretch text-stone-800 text-md font-normal dark:text-gray-400">You do not claim intellectual property rights or exclusive ownership to any of our assets, modified or unmodified. All assets are property of Workstation+. Our assets are provided ‘as is’ without warranty of any kind, either expressed or implied. In no event shall our company be liable for any damages including, but not limited to, direct, indirect, special, punitive, incidental or consequential, or other losses arising out of the use of or inability to use our assets.</div>
+                </div>
+                <div id="rosponsibility" class=" flex-col justify-start items-start gap-2.5 flex">
+                    <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Responsibility of Extension Visitors
+                    </div>
+                    <div class="self-stretch text-stone-800 text-md font-normal dark:text-gray-400">Workstation+ has not reviewed, and cannot review, all of the material, being presented in search results from the extension, and cannot therefore be responsible for that material’s content, use or effects. By operating the extension, Workstation+ does not represent or imply that it endorses the material there posted, or that it believes such material to be accurate, useful or non-harmful. You are responsible for taking precautions as necessary to protect yourself and your computer systems from viruses, worms, Trojan horses, and other harmful or destructive content. Search results may contain content that is offensive, indecent, or otherwise objectionable, as well as content containing technical inaccuracies, typographical mistakes, and other errors. The content posted on other websites may also contain material that violates the privacy or publicity rights, or infringes the intellectual property and other proprietary rights of third parties, or downloading, copying or use of which is subject to additional terms and conditions, stated or unstated. Workstation+ disclaims any responsibility for any harm resulting from the use by visitors of the extension.</div>
+                </div>
+                <div id="copyright" class=" flex-col justify-start items-start gap-2.5 flex">
+                    <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Copyright Infringement and DMCA Policy
+                    </div>
+                    <div class="dark:text-gray-400 self-stretch text-stone-800 text-md font-normal ">As Workstation+ asks others to respect its intellectual property rights, it respects the intellectual property rights of others. If you believe that material located on or linked to by Workstation+ violates your copyright, you are encouraged to notify Workstation+. Workstation+ will respond to all such notices, including as required or appropriate by removing the infringing material or disabling all links to the infringing material. In the case of a visitor who may infringe or repeatedly infringes the copyrights or other intellectual property rights of Workstation+ or others, Workstation+ may, in its discretion, terminate or deny access to and use of the extension.</div>
+                </div>
+                <div id="intellectual" class=" flex-col justify-start items-start gap-2.5 flex">
+                    <div class="self-stretch dark:text-gray-300 text-stone-800 text-3xl font-medium ">Intellectual Property</div>
+                    <div class="self-stretch text-stone-800 dark:text-gray-400 text-md font-normal ">This Agreement does not transfer from Workstation+ to you any Workstation+ or third-party intellectual property, and all right, title and interest in and to such property will remain (as between the parties) solely with Workstation+. Workstation+, the Workstation+ logo, and all other trademarks, service marks, graphics and logos used in connection with the Workstation+ Extension, and Workstation+ Website are trademarks or registered trademarks of Workstation+ or Workstation+’s licensors. Other trademarks, service marks, graphics and logos used in connection with the extension and website may be the trademarks of other third parties. Your use of Workstation+ grants you no right or license to reproduce or otherwise use any Workstation+ or third-party trademarks.</div>
+                </div>
+                <div id="changes" class=" flex-col justify-center items-start gap-2.5 flex">
+                    <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Changes
+                    </div>
+                    <div class="self-stretch text-stone-800 text-md font-normal dark:text-gray-400">Workstation+ Reserves the right, at its sole discretion, to modify or replace any part of this Agreement without notice. It is your responsibility to check this Agreement periodically for changes. Your continued use of or access to the extension following the posting of any changes to this Agreement constitutes acceptance of those changes. Workstation+ may also, in the future, offer new services and/or features through the extension (including, the release of new tools and resources). Such new features and/or services shall be subject to the terms and conditions of this Agreement.</div>
+                </div>
+                <div id="termination" class=" flex-col justify-start items-start gap-2.5 flex">
+                    <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Termination</div>
+                    <div class="self-stretch text-stone-800 text-md font-normal dark:text-gray-400">Workstation+ may terminate your access to all or any part of the extension at any time, with or without cause, with or without notice, effective immediately. If you wish to terminate this Agreement, you may simply remove Workstation+ from the extension store and discontinue using the extension. All provisions of this Agreement which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</div>
+                </div>
+                <div id="contacts" class=" flex-col justify-start items-start gap-2.5 flex">
+                    <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Contacts</div>
+                    <div class="self-stretch"><span class="text-stone-800 dark:text-gray-400 text-md font-normal">Some
+                            of the web search services
+                            provided herein are provided by CodeFuel and powered by CodeFuel’s search partners. For
+                            information on the
+                            web search services data collection, please visit </span><span
+                            class="text-stone-800 text-md font-normal underline dark:text-gray-400">https://www.codefuel.com/legal/end_user_privacy_policy</span><span
+                            class="text-stone-800 text-md font-normal dark:text-gray-400">, and the search provider’s
+                            privacy policy, as applicable,
+                            both
+                            as updated from time to time and at any successor locations.</span></div>
+                </div>
+                <div id="limitation" class=" flex-col justify-start items-start gap-2.5 flex">
+                    <div class="self-stretch dark:text-gray-300 text-stone-800 text-3xl font-medium ">Limitation of Liability</div>
+                    <div class="self-stretch text-stone-800 dark:text-gray-400 text-md font-normal ">In no event will Workstation+ be liable with respect to any subject matter of this agreement under any contract, negligence, strict liability or other legal or equitable theory for: (i) any special, incidental or consequential damages; or (ii) for interruption of use or loss or corruption of data. Workstation+ shall have no liability for any failure or delay due to matters beyond their reasonable control. The foregoing shall not apply to the extent prohibited by applicable law.</div>
+                </div>
+                <div id="general" class=" flex-col justify-start items-start gap-2.5 flex">
+                    <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">General Representation and Warranty
+                    </div>
+                    <div class="self-stretch text-stone-800 text-md font-normal dark:text-gray-400">You represent and warrant that (i) your use of the extension will be in strict accordance with the Workstation+ Privacy Policy, with this Agreement and with all applicable laws and regulations (including without limitation any local laws or regulations in your country, state, city, or other governmental area, regarding online conduct and acceptable content, and including all applicable laws regarding the transmission of technical data exported from the country in which you reside) and (ii) your use of the extension will not infringe or misappropriate the intellectual property rights of any third party.</div>
+                </div>
+                <div id="indemnification" class=" flex-col justify-start items-start gap-2.5 flex">
+                    <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Indemnification</div>
+                    <div class="self-stretch text-stone-800 text-md font-normal dark:text-gray-400">You agree to indemnify and hold harmless Workstation+, its contractors, and its licensors, and their respective directors, officers, employees and agents from and against any and all claims and expenses, including attorney fees, arising out of your use of the extension, including but not limited to out of your violation of this Agreement.
+                    </div>
+                </div>
+                <div id="site" class=" flex-col justify-start items-start gap-2.5 flex">
+                    <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Site Terms of Use Modifications</div>
+                    <div
+                            class="text-stone-800 text-md font-normal dark:text-gray-400">
+                            Workstation+   may revise these terms of use for its extension at any time without notice. By using this extension, you are agreeing to be bound by the then current version of these Terms and Conditions of Use  
+                    </div>
+                </div>
+                <div id="AGA" class=" flex-col justify-start items-start gap-2.5 flex">
+                    <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">AGA Consulting
+                        Services LLC</div>
+                    <div class="self-stretch"><span class="text-stone-800 text-md font-normal dark:text-gray-400">1221
+                            Brickel Avenue, Miami,
+                            FL.<br /></span><span
+                            class="text-stone-800 text-md font-normal underline dark:text-gray-400">extensions@f</span><span
+                            class="text-stone-800 text-md font-normal underline dark:text-gray-400">acebase.io</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <footer class="bg-white dark:bg-custom-black dark:border-t border-t-[0.5px] dark:border-t-gray-700 z-20">
+        <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div class="md:flex md:justify-between">
+                <div class="mb-6 md:mb-0  md:pt-14 pt-0">
+                    <a href="#home" class="flex items-center justify-center">
+                        <img src="Resources/logo.svg" class="h-12 mr-3" alt="Workstation+ Logo" />
+                        <span class="dark:text-white text-stone-800 text-3xl hover:underline">Workstation+</span>
+                    </a>
+                </div>
+                <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">SiteMap</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="index.html" class="hover:underline">Home</a>
+                            </li>
+                            <li class="mb-4">
+                                <a href="index.html#about" class="hover:underline">About</a>
+                            </li>
+                            <li>
+                                <a href="index.html#contact" class="hover:underline">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
+                        <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                            <li class="mb-4">
+                                <a href="index2.html" class="hover:underline">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="pt-0 md:pt-12">
+                        <button type="button"
+                            class="text-white bg-custom-purple hover:bg-slate-600 focus:ring-4 focus:outline-none focus:ring-purple-300 font-medium rounded-lg text-sm px-4 py-2 text-center mr-3 md:mr-0 dark:bg-custom-purple dark:hover:bg-slate-600 dark:focus:ring-slate-700">Get
+                            Workstation+</button>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+            <div class="sm:flex sm:items-center sm:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="index.html"
+                        class="hover:underline">Workstation+™</a>. All Rights Reserved.
+                </span>
+                <div class="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 8 19">
+                            <path fill-rule="evenodd"
+                                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Facebook page</span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 21 16">
+                            <path
+                                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                        </svg>
+                        <span class="sr-only">Discord community</span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 17">
+                            <path fill-rule="evenodd"
+                                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">GitHub account</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+
+</html>
+
+<script>
+
+    let activeItem = null;
+    const indicator = document.getElementById('indicator');
+
+    // Initially set the indicator to the first item
+    selectItem(document.getElementById("first"));
+
+    function selectItem(item) {
+        if (activeItem) {
+            activeItem.classList.remove('text-slate-500');
+            activeItem.classList.add('dark:text-gray-300')
+        }
+        item.classList.remove('dark:text-gray-300')
+        item.classList.add('text-slate-500');
+        activeItem = item;
+
+        // Calculate the top position for the indicator
+        const topPosition = item.offsetTop + item.clientHeight / 2 - indicator.clientHeight / 2;
+
+        // Animate the indicator to the new top position
+        indicator.style.transition = 'top 0.3s ease-in-out';
+        indicator.style.top = `${topPosition}px`;
+        activeItem.scrollIntoView({ behavior: 'smooth' });
+
+        // Remove the transition property after the animation
+        setTimeout(() => {
+            indicator.style.transition = 'none';
+        }, 300);
+    }
+</script>

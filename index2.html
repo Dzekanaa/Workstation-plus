@@ -5,22 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Privacy Policy</title>
   <html style="scroll-behavior: smooth;">
-  <style>
-    /* Hide scrollbar in webkit-based browsers (e.g., Chrome, Safari) */
-    .scrollable-container::-webkit-scrollbar {
-      width: 0.5rem;
-      /* Adjust as needed */
-    }
 
-    .scrollable-container::-webkit-scrollbar-thumb {
-      background-color: transparent;
-    }
-
-    /* Hide scrollbar in Firefox */
-    .scrollable-container {
-      scrollbar-width: none;
-    }
-  </style>
   <!-- ovo je za tailwind -->
   <link href="dist/output1.css" rel="stylesheet" />
 </head>
@@ -50,25 +35,26 @@
           class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-custom-black md:dark:bg-custom-black dark:border-gray-700">
           <li>
             <a href="index.html"
-              class="block py-2 pl-3 pr-4 text-white bg-custom-purple rounded md:bg-transparent md:text-custom-purple md:p-0 md:dark:text-custom-purple">Home</a>
+            class="block py-2 pl-3 pr-4 text-stone-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-custom-purple md:p-0 md:dark:hover:text-custom-purple dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+              >Home</a>
           </li>
           <li>
             <a href="index.html#about"
-              class="block py-2 pl-3 pr-4 text-stone-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-custom-purple md:p-0 md:dark:hover:text-custom-purple dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+              class="block py-2 pl-3 pr-4 text-stone-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-custom-purple md:p-0 md:dark:hover:text-custom-purple dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
           </li>
           <li>
             <a href="index.html#contact"
-              class="block py-2 pl-3 pr-4 text-stone-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-custom-purple md:p-0 md:dark:hover:text-custom-purple dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+              class="block py-2 pl-3 pr-4 text-stone-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-custom-purple md:p-0 md:dark:hover:text-custom-purple dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
           </li>
           <li>
             <a href="index2.html"
-              class="block py-2 pl-3 pr-4 text-stone-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-custom-purple md:p-0 md:dark:hover:text-custom-purple dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+            class="block py-2 pl-3 pr-4 text-gray-300 bg-slate-500 rounded md:bg-transparent md:text-custom-purple md:p-0 md:dark:text-custom-purple"
               aria-current="page">Privacy
               Policy</a>
           </li>
           <li>
-            <a href="#"
-              class="block py-2 pl-3 pr-4 text-stone-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-custom-purple md:p-0 md:dark:hover:text-custom-purple dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Term
+            <a href="index3.html"
+            class="block py-2 pl-3 pr-4 text-stone-800 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-custom-purple md:p-0 md:dark:hover:text-custom-purple dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Term
               & Condition</a>
           </li>
         </ul>
@@ -76,73 +62,74 @@
     </div>
   </nav>
 
+<div class="flex justify-center dark:bg-custom-black">
+  <div class="md:mt-14 md:ml-32 ml-0 mt-0 h-100dvh flex items-start justify-start">
+      <!-- Sticky child div using Tailwind CSS -->
+      <div id="FixedDiv" class=" sticky top-0">
+        <div class="relative w-full">
+          <div id="indicator" class="w-1.5 h-12 rounded-lg bg-slate-500 absolute"></div>
+          <ul class=" ml-8">
+            <li id="first" class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+              onclick="selectItem(this)">
+              <a href="#general">General</a>
+            </li>
+            <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+              onclick="selectItem(this)">
+              <a href="#cookies">Use of Cookies</a>
+            </li>
+            <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+              onclick="selectItem(this)">
+              <a href="#what">What Information
+                does Workstation+ Collect?</a>
+            </li>
+            <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+              onclick="selectItem(this)">
+              <a href="#does">Does Workstation+ disclose information to anyone else?</a>
+            </li>
+            <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+              onclick="selectItem(this)">
+              <a href="#data">Data collected by search engines</a>
+            </li>
+            <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+              onclick="selectItem(this)">
+              <a href="#links">Links</a>
+            </li>
+            <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+              onclick="selectItem(this)">
+              <a href="#contacts">Contacts</a>
+            </li>
+            <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+              onclick="selectItem(this)">
+              <a href="#Typess">Types of data collected by search engines</a>
+            </li>
+            <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+              onclick="selectItem(this)">
+              <a href="#Changes">Changes to the Privacy Policy</a>
+            </li>
+            <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+              onclick="selectItem(this)">
+              <a href="#information">Further information</a>
+            </li>
+            <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out dark:text-gray-300"
+              onclick="selectItem(this)">
+              <a href="#AGA">AGA Consulting Services LLC</a>
+            </li>
 
-  <div id="FixedDiv" class="fixed w-[25%] overflow-y-auto h-[45%] scrollable-container mt-14 ml-32 mb-52">
-    <div class="relative w-full">
-      <div id="indicator" class="w-1.5 h-12 rounded-lg bg-slate-500 absolute"></div>
-      <ul class=" ml-8">
-        <li id="first"
-          class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out"
-          onclick="selectItem(this)">
-          <a href="#general">General</a>
-        </li>
-        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out "
-          onclick="selectItem(this)">
-          <a href="#cookies">Use of Cookies</a>
-        </li>
-        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out "
-          onclick="selectItem(this)">
-          <a href="#what">What Information
-            does Workstation+ Collect?</a>
-        </li>
-        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out "
-          onclick="selectItem(this)">
-          <a href="#does">Does Workstation+ disclose information to anyone else?</a>
-        </li>
-        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out "
-          onclick="selectItem(this)">
-          <a href="#data">Data collected by search engines</a>
-        </li>
-        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out "
-          onclick="selectItem(this)">
-          <a href="#links">Links</a>
-        </li>
-        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out "
-          onclick="selectItem(this)">
-          <a href="#contacts">Contacts</a>
-        </li>
-        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out "
-          onclick="selectItem(this)">
-          <a href="#Typess">Types of data collected by search engines</a>
-        </li>
-        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out "
-          onclick="selectItem(this)">
-          <a href="#Changes">Changes to the Privacy Policy</a>
-        </li>
-        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out "
-          onclick="selectItem(this)">
-          <a href="#information">Further information</a>
-        </li>
-        <li class="relative hover:underline cursor-pointer py-4 transition duration-300 ease-in-out "
-          onclick="selectItem(this)">
-          <a href="#AGA">AGA Consulting Services LLC</a>
-        </li>
-
-      </ul>
+          </ul>
+        </div>
     </div>
   </div>
 
 
-  <div class="w-full flex justify-end items-end">
     <div class="w-[70%] flex-col justify-start items-start gap-[74px] inline-flex p-16">
       <div class="justify-center items-center gap-4 inline-flex">
         <img class="w-10" src="Resources/Privacy Police.svg" />
-        <div class="text-center text-stone-800 text-5xl font-medium">Privacy Policy</div>
+        <div class="text-center text-stone-800 text-5xl font-medium dark:text-gray-300">Privacy Policy</div>
       </div>
       <div class="flex-col justify-center items-start gap-[50px] flex">
         <div id="general" class=" flex-col justify-center items-start gap-[13px] flex">
-          <div class="self-stretch text-stone-800 text-3xl font-medium ">General</div>
-          <div class="self-stretch text-stone-800 text-md font-normal ">Workstation+ respects the privacy of all those
+          <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">General</div>
+          <div class="self-stretch text-stone-800 text-md font-normal dark:text-gray-400">Workstation+ respects the privacy of all those
             who
             use the services we provide on this extension. We have a simple policy that we will not wil fully disclose
             any
@@ -153,8 +140,8 @@
             to our Terms and Conditions of use.</div>
         </div>
         <div id="cookies" class=" flex-col justify-start items-start gap-2.5 flex">
-          <div class="self-stretch text-stone-800 text-3xl font-medium ">Use of Cookies</div>
-          <div class="self-stretch text-stone-800 text-md font-normal ">A “cookie” is a file sent to your browser by a
+          <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Use of Cookies</div>
+          <div class="self-stretch text-stone-800 text-md font-normal dark:text-gray-400">A “cookie” is a file sent to your browser by a
             web
             server and stored on your computer. It contains data that websites use to identify you as a unique user.
             Companies which may choose to advertise via our extension or related search pages may collect information
@@ -168,9 +155,9 @@
             you should contact whoever is responsible for that site directly.</div>
         </div>
         <div id="what" class=" flex-col justify-start items-start gap-2.5 flex">
-          <div class="self-stretch text-stone-800 text-3xl font-medium ">What Information does Workstation+ Collect?
+          <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">What Information does Workstation+ Collect?
           </div>
-          <div class="self-stretch text-stone-800 text-md font-normal ">Workstation+ does not collect any personal
+          <div class="dark:text-gray-400 self-stretch text-stone-800 text-md font-normal ">Workstation+ does not collect any personal
             information about you (such as your name or email address) except when you specifically and knowingly
             provide
             that information. We do keep a record of the IP addresses from which users access our extension. This data
@@ -180,10 +167,10 @@
             information about those using our extension.</div>
         </div>
         <div id="does" class=" flex-col justify-start items-start gap-2.5 flex">
-          <div class="self-stretch text-stone-800 text-3xl font-medium ">Does Workstation+ disclose information to
+          <div class="self-stretch dark:text-gray-300 text-stone-800 text-3xl font-medium ">Does Workstation+ disclose information to
             anyone
             else?</div>
-          <div class="self-stretch text-stone-800 text-md font-normal ">We do not disclose any personal information
+          <div class="self-stretch text-stone-800 dark:text-gray-400 text-md font-normal ">We do not disclose any personal information
             about
             our extension users to any 3rd party. For example, we may disclose the total number of “hits” our extension
             receives, or how often the average user visits our extension, or which terms are most often entered in our
@@ -195,9 +182,9 @@
             by law.</div>
         </div>
         <div id="collect" class=" flex-col justify-center items-start gap-2.5 flex">
-          <div class="self-stretch text-stone-800 text-3xl font-medium ">What Information does Workstation+ Collect?
+          <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">What Information does Workstation+ Collect?
           </div>
-          <div class="self-stretch text-stone-800 text-md font-normal ">Workstation+ does not collect any personal
+          <div class="self-stretch text-stone-800 text-md font-normal dark:text-gray-400">Workstation+ does not collect any personal
             information about you (such as your name or email address) except when you specifically and knowingly
             provide
             that information. We do keep a record of the IP addresses from which users access our extension. This data
@@ -207,8 +194,8 @@
             information about those using our extension.</div>
         </div>
         <div id="links" class=" flex-col justify-start items-start gap-2.5 flex">
-          <div class="self-stretch text-stone-800 text-3xl font-medium ">Links</div>
-          <div class="self-stretch text-stone-800 text-md font-normal ">The Workstation+ extension and search results
+          <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Links</div>
+          <div class="self-stretch text-stone-800 text-md font-normal dark:text-gray-400">The Workstation+ extension and search results
             contain links to external sites. Please be aware that these external sites are developed by people over whom
             we have no control, and we are not responsible for their privacy practices. This Privacy Policy applies only
             to Workstation+ Extension. We encourage you to familiarize yourself with the privacy policy of any website
@@ -216,32 +203,32 @@
             visit which collects personal information, and to exercise discretion when providing such information.</div>
         </div>
         <div id="contacts" class=" flex-col justify-start items-start gap-2.5 flex">
-          <div class="self-stretch text-stone-800 text-3xl font-medium ">Contacts</div>
-          <div class="self-stretch"><span class="text-stone-800 text-md font-normal">Some of the web search services
+          <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Contacts</div>
+          <div class="self-stretch"><span class="text-stone-800 dark:text-gray-400 text-md font-normal">Some of the web search services
               provided herein are provided by CodeFuel and powered by CodeFuel’s search partners. For information on the
               web search services data collection, please visit </span><span
-              class="text-stone-800 text-md font-normal underline ">https://www.codefuel.com/legal/end_user_privacy_policy</span><span
-              class="text-stone-800 text-md font-normal ">, and the search provider’s privacy policy, as applicable,
+              class="text-stone-800 text-md font-normal underline dark:text-gray-400">https://www.codefuel.com/legal/end_user_privacy_policy</span><span
+              class="text-stone-800 text-md font-normal dark:text-gray-400">, and the search provider’s privacy policy, as applicable,
               both
               as updated from time to time and at any successor locations.</span></div>
         </div>
         <div id="Changes" class=" flex-col justify-start items-start gap-2.5 flex">
-          <div class="self-stretch text-stone-800 text-3xl font-medium ">Changes to the Privacy Policy</div>
-          <div class="self-stretch text-stone-800 text-md font-normal ">We may change this Privacy Policy from time to
+          <div class="self-stretch dark:text-gray-300 text-stone-800 text-3xl font-medium ">Changes to the Privacy Policy</div>
+          <div class="self-stretch text-stone-800 dark:text-gray-400 text-md font-normal ">We may change this Privacy Policy from time to
             time at our discretion and without notice. If we do, an updated version of this Privacy Policy will be made
             available on this extension so that you remain aware of the data we collect, how we use it, and under what
             circumstances we disclose it.</div>
         </div>
         <div id="information" class=" flex-col justify-start items-start gap-2.5 flex">
-          <div class="self-stretch text-stone-800 text-3xl font-medium ">Further information</div>
-          <div class="self-stretch text-stone-800 text-md font-normal ">Please feel free to contact us if you have any
+          <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Further information</div>
+          <div class="self-stretch text-stone-800 text-md font-normal dark:text-gray-400">Please feel free to contact us if you have any
             questions, comments or would like more information. You can contact the Workstation+ team at ‘contact
             details’
             below. This Privacy Statement is version 1.0, and replaces all previous versions.</div>
         </div>
         <div id="data" class=" flex-col justify-start items-start gap-2.5 flex">
-          <div class="self-stretch text-stone-800 text-3xl font-medium ">Data collected by search engines</div>
-          <div class="self-stretch text-stone-800 text-md font-normal ">Some of the web search services provided herein
+          <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Data collected by search engines</div>
+          <div class="self-stretch text-stone-800 text-md font-normal dark:text-gray-400">Some of the web search services provided herein
             are provided by CodeFuel and powered by CodeFuel’s search partners. For information on the web search
             services
             data collection, please visit https://www.codefuel.com/legal/end_user_privacy_policy, and the search
@@ -249,8 +236,8 @@
           </div>
         </div>
         <div id="Typess" class=" flex-col justify-start items-start gap-2.5 flex">
-          <div class="self-stretch text-stone-800 text-3xl font-medium ">Types of data collected by search engines</div>
-          <div class="self-stretch"><span class="text-stone-800 text-md font-normal ">Workstation+ partners with third
+          <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">Types of data collected by search engines</div>
+          <div class="self-stretch"><span class="text-stone-800 text-md font-normal dark:text-gray-400">Workstation+ partners with third
               party search engines. These search engines can collect personal information about their users in
               accordance
               with their own privacy policies*. User data is collected are as follows but not limited to – location
@@ -264,21 +251,23 @@
               search
               results for it s users. The privacy policies of these search providers can be found
               below;<br />https://policies.google.com/privacy?hl=en-US<br /></span><span
-              class="text-stone-800 text-md font-normal underline ">https://privacy.microsoft.com/en-gb/privacystatement<br /></span><span
-              class="text-stone-800 text-md font-normal underline ">https://www.verizonmedia.com/policies/sg/en/verizonmedia/privacy/index.html<br /></span><span
-              class="text-stone-800 text-md font-normal underline ">https://www.ask.com/privacy?qo=footerLinks</span>
+              class="text-stone-800 dark:text-gray-400 text-md font-normal underline ">https://privacy.microsoft.com/en-gb/privacystatement<br /></span><span
+              class="text-stone-800 text-md font-normal dark:text-gray-400 underline ">https://www.verizonmedia.com/policies/sg/en/verizonmedia/privacy/index.html<br /></span><span
+              class="text-stone-800 text-md font-normal underline dark:text-gray-400 ">https://www.ask.com/privacy?qo=footerLinks</span>
           </div>
         </div>
         <div id="AGA" class=" flex-col justify-start items-start gap-2.5 flex">
-          <div class="self-stretch text-stone-800 text-3xl font-medium ">AGA Consulting Services LLC</div>
-          <div class="self-stretch"><span class="text-stone-800 text-md font-normal ">1221 Brickel Avenue, Miami,
-              FL.<br /></span><span class="text-stone-800 text-md font-normal underline ">extensions@f</span><span
-              class="text-stone-800 text-md font-normal underline ">acebase.io</span></div>
+          <div class="self-stretch text-stone-800 text-3xl font-medium dark:text-gray-300">AGA Consulting Services LLC</div>
+          <div class="self-stretch"><span class="text-stone-800 text-md font-normal dark:text-gray-400">1221 Brickel Avenue, Miami,
+              FL.<br /></span><span class="text-stone-800 text-md font-normal underline dark:text-gray-400">extensions@f</span><span
+              class="text-stone-800 text-md font-normal underline dark:text-gray-400">acebase.io</span></div>
         </div>
       </div>
     </div>
-  </div>
 
+</div>
+
+  
 
 
 
@@ -386,7 +375,9 @@
   function selectItem(item) {
     if (activeItem) {
       activeItem.classList.remove('text-slate-500');
+      activeItem.classList.add('dark:text-gray-300')
     }
+    item.classList.remove('dark:text-gray-300')
     item.classList.add('text-slate-500');
     activeItem = item;
 
